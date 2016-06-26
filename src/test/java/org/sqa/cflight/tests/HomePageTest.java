@@ -34,6 +34,7 @@ import org.testng.annotations.Test;
  */
 
 public class HomePageTest {
+	
 	private WebDriver driver;
 	
 	// creating instance of class HomePage
