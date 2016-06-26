@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="classes">
+  <test name="FirefoxTest">
+   <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="org.sqa.cflight.tests.HomePageTest"/>
+      <class name="org.sqa.cflight.tests.HotelsPageTest"/>
+<!--      <class name="com.cheapair.sqa.tests.JoinTestPOM"/>-->
+<!--       <class name="com.cheapair.sqa.JoinTest"/> -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
