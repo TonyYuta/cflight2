@@ -58,4 +58,5 @@ public class ReadFileData {
 		FLIGHTS_PAGE_URL = prop.getProperty("flightsPageUrl");
 		CARS_PAGE_URL = prop.getProperty("carsPageUrl");
   }
+	
 }

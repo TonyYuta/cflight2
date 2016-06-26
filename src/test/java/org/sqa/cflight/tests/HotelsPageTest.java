@@ -12,7 +12,6 @@ import org.testng.annotations.Test;
 
 public class HotelsPageTest {
 	private WebDriver driver;
-	
 	// creating instance of class HomePage
 	HotelsPage hotelsPage;
 

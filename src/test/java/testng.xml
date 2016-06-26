@@ -5,7 +5,6 @@
    <parameter name="browser" value="firefox" />
     <classes>
       <class name="org.sqa.cflight.tests.HomePageTest"/>
-      
       <class name="org.sqa.cflight.tests.HotelsPageTest"/>
 <!--      <class name="com.cheapair.sqa.tests.JoinTestPOM"/>-->
 <!--       <class name="com.cheapair.sqa.JoinTest"/> -->
