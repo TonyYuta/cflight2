@@ -20,6 +20,7 @@ package org.sqa.cflight.data;
  * @since       1.0
  *
  */
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -33,6 +34,7 @@ public class ReadFileData {
 							CARS_PAGE_URL;
 	
 	public void properties() {
+		
 		File file = new File("src/main/resources/datafile.properties");
 		FileInputStream fileInput = null;
 		

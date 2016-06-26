@@ -39,7 +39,6 @@ public class HomePageTest {
 	// creating instance of class HomePage
 	HomePage homePage;
 
-
 	@BeforeMethod
 	public void createInstanceOfFirefox() {
 		ReadFileData rfd = new ReadFileData();
