@@ -65,6 +65,7 @@ public class HotelsPageTest {
 		hotelsPage.navigateToHotelsPage();
 		hotelsPage.fillOutcityAddressOrHotelField(locationInput);
 		// departure in 2 days; return 1st day next (today + 1) month (day 0)
+		
 		hotelsPage.chooseDates(0, 0);
 		hotelsPage.searchHotel();
 		Assert.assertEquals(hotelsPage.locationLabel(), locationLabelExpected, "Not match to a label: " + hotelsPage.locationLabel());	
