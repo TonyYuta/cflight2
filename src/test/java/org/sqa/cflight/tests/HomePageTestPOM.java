@@ -153,7 +153,4 @@ public class HomePageTestPOM {
        // Assert.assertEquals("https://www.cheapair.com/hotels/", driver.getTitle(), "Hotels");
 	}
 	
-//	@Test(enabled = true, groups = "hotels")
-
-	
 }

@@ -33,6 +33,7 @@ import org.sqa.cflight.data.ReadFileData;
  */
 public class HomePage {
 	
+	
 	// Main Page methods using Page factory
 	
 	@FindBy(css = "#idx-0-0-Price")
