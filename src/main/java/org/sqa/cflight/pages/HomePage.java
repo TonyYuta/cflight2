@@ -298,6 +298,7 @@ public class HomePage {
 		return searchResults;
 	}
 	
+	
 	/**
 	 * @param city Dallas only
 	 * @return
