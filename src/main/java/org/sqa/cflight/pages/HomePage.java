@@ -338,4 +338,5 @@ public class HomePage {
 		priceDetails = totalPrice.getText();
 		return priceDetails;
 	}
+	
 }
