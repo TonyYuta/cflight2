@@ -315,7 +315,6 @@ public class HomePage {
 	
 	
 	public String bookCheapestRoundTrip() {
-		
 
 		String priceDetails = "";
 		
