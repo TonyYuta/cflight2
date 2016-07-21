@@ -321,7 +321,6 @@ public class HomePage {
 	//	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		WebDriverWait wait = new WebDriverWait(driver, 8);
 		
-
 		wait.until(ExpectedConditions.visibilityOf(foptPriceDeparture));	
 		foptPriceDeparture.click();
 		
