@@ -338,4 +338,5 @@ public class HomePage {
 		return priceDetails;
 	}
 	
+	
 }
