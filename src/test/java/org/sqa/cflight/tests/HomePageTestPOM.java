@@ -42,8 +42,10 @@ public class HomePageTestPOM {
 	 * before method methods
 	 */
 	@BeforeMethod
-	public void startSeleniumWithFirefox() {
+	public void startSeleniumWithWebDriver() {
 		driver = new FirefoxDriver();
+//		driver = new ChromeDriver();
+		//driver = new PhantomJSDriver();
 		driver.manage().window().maximize();
 		hp = new HomePagePOM(driver);
 		homePageUrl = "https://www.cheapair.com";
@@ -54,7 +56,7 @@ public class HomePageTestPOM {
 	 * after method methods
 	 */
 	@AfterMethod
-	public void stopSeleniumWithFirefox() {
+	public void stopSeleniumWithWebDriver() {
 		driver.close();
 	}
 

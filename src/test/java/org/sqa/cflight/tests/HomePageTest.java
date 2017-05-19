@@ -10,6 +10,7 @@ package org.sqa.cflight.tests;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
 import org.sqa.cflight.data.ReadFileData;
 import org.sqa.cflight.pages.HomePage;
@@ -35,23 +36,35 @@ import org.testng.annotations.Test;
 
 public class HomePageTest {
 	private WebDriver driver;
+	//private String baseUrl;
+	//  private StringBuffer verificationErrors = new StringBuffer();
+	  protected static DesiredCapabilities dCaps;
 	
 	// creating instance of class HomePage
 	HomePage homePage;
 
 	@BeforeMethod
-	public void createInstanceOfFirefox() {
+	public void createInstanceOfWebDriver() {
 		ReadFileData rfd = new ReadFileData();
-		rfd.properties();
-		
-		driver = new FirefoxDriver();
+		rfd.properties();		
+/*		DesiredCapabilities caps = new DesiredCapabilities();
+        caps.setJavascriptEnabled(true);  
+        caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, "phantomjs-2.1.1-macosx");
+*/      driver = new FirefoxDriver();
+		//driver = new PhantomJSDriver();              
 		driver.manage().window().maximize();
 		homePage = PageFactory.initElements(driver, HomePage.class);
 	}
 
 	@AfterMethod
-	public void quitInsanceOfFirefox() {
+	public void quitInsanceOfWebDriver() {
 		driver.quit();
+	}
+	
+	@Test
+	public void qqqTest() {
+		homePage.navigateToHomePage();
+		System.out.println("============== " + driver.getTitle());
 	}
 
 	/**

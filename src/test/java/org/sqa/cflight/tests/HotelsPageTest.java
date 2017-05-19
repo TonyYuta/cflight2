@@ -17,17 +17,20 @@ public class HotelsPageTest {
 	HotelsPage hotelsPage;
 
 	@BeforeMethod
-	public void createInstanceOfFirefox() {
+	public void createInstanceOfWebDriver() {
 		ReadFileData rfd = new ReadFileData();
 		rfd.properties();
 		
 		driver = new FirefoxDriver();
+//		driver = new ChromeDriver();
+		//driver = new PhantomJSDriver();
+
 		driver.manage().window().maximize();
 		hotelsPage = PageFactory.initElements(driver, HotelsPage.class);
 	}
 
 	@AfterMethod
-	public void quitInsanceOfFirefox() {
+	public void quitInsanceOfWebDriver() {
 		driver.quit();
 	}
 
